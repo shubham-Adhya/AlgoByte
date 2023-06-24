@@ -8,10 +8,13 @@ export function UserContextProvider({ children }) {
   const [username, setLoggedInUserName] = useState(null);
   const [id, setId] = useState(null);
   useEffect(() => {
-    const token = document.cookie
-        .split('; ')
-        .find(row => row.startsWith('AlgoByte='))
-        .split('=')[1];
+    let token
+    if(document.cookie){
+      token = document.cookie
+      .split('; ')
+      .find(row => row.startsWith('AlgoByte='))
+      .split('=')[1];
+    }
         // console.log(token)
     if (token) {
       axios.get("/user/profile",{

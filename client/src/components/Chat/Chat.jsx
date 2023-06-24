@@ -36,7 +36,8 @@ export default function Chat(){
                 }
             })
             .then((res)=>{
-                setAssistantMessage(res.data.choices[0].message)
+                console.log(res.data)
+                setAssistantMessage(res.data?.choices[0].message)
                 setuserPrompt('')
             })
             .catch((err)=>console.log(err))
