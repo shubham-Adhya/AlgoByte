@@ -3,6 +3,6 @@ The objective of this project is to develop a self-interview preparation platfor
 
 
 
-Deployed link: https://649727eaf4f5747a9c9b591d--superb-khapse-bf7b01.netlify.app/
+Deployed link: https://superb-khapse-bf7b01.netlify.app/
 
 Backend Link: https://cyan-concerned-puffer.cyclic.app/
